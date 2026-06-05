@@ -87,7 +87,7 @@
 <section class="screen active" id="s1">
   <div class="envelope-wrap">
     <!-- ✏️ PERSONNALISER : texte au-dessus -->
-    <span class="blink-label">✦ Un message secret t'attend ✦</span>
+    <span class="blink-label">✦ Ton cadeau t'attend ✦</span>
     <div class="envelope" id="envelope" onclick="openEnvelope()">
       <div class="env-body"></div>
       <div class="env-flap"></div>
@@ -110,14 +110,14 @@
 <section class="screen" id="s3">
   <div class="letter-paper">
     <!-- ✏️ PERSONNALISER : date -->
-    <div class="letter-date">Juin 2026 · Confidentiel</div>
+    <div class="letter-date">Le 4 juin 2026</div>
 
     <h1 class="letter-header">Léane,</h1>
 
     <div class="letter-body">
       <!-- ✏️ PERSONNALISER : corps de la lettre -->
       <p>Tu viens d'avoir <strong>20 ans</strong> !</p>
-      <p>Tu penses peut-être <em>enfin</em>, et moi je dis déjà !</p>
+      <p>Tu penses peut-être <em>enfin</em>, et moi je dis <em>déjà</em> !</p>
       <p>20 ans de bonheur et de moments partagés.</p>
       <p>Tu as suivi les indices jusqu'au bout et tu devines peut-être le cadeau qui marquera ce bel anniversaire.</p>
       <p>Ce que tu ne sais pas encore, c'est qu'on va partager ce cadeau toutes les deux.</p>
@@ -128,7 +128,7 @@
     <!-- ✏️ PERSONNALISER : signature -->
     <div class="letter-signature">Ta maman qui t'aime ❤</div>
 
-    <button class="letter-btn" onclick="goTo('s4')">Clique ici ❤</button>
+    <button class="letter-btn" onclick="goTo('s4')">Ton cadeau est ici ❤</button>
   </div>
 </section>
 
@@ -140,7 +140,7 @@
 
   <div class="reveal-content">
     <!-- ✏️ PERSONNALISER : surtitre -->
-    <p class="reveal-tag">✦ Ton cadeau d'anniversaire ✦</p>
+    <p class="reveal-tag">✦ Direction ✦</p>
 
     <!-- ✏️ PERSONNALISER : destination -->
     <h1 class="reveal-title">New York</h1>
@@ -151,12 +151,12 @@
 
     <!-- ✏️ PERSONNALISER : message final -->
     <div class="reveal-message">
-      Valises, selfies devant Central Park,<br>
+      Selfies à Times Square, vélo dans Central Park,<br>
       bagels le matin et Broadway le soir…<br>
       <strong>On part à New York, toi et moi.</strong>
     </div>
 
-    <button class="confetti-btn" onclick="launchConfetti()">Célébrer ! ✨</button>
+    <button class="confetti-btn" onclick="launchConfetti()">Clique ! ✨</button>
     <span class="hearts">♥ ♥ ♥</span>
   </div>
 </section>
@@ -168,31 +168,31 @@
 const enigmes = [
   {
     icon: "🌊",
-    question: "En 1609, un explorateur hollandais remonte un fleuve qui portera son nom — un fleuve qui longe aujourd'hui l'une des villes les plus célèbres au monde. Qui est-il ?\n\n(📸 cherche une photo de ce fleuve vu du ciel)",
+    question: "En 1609, un explorateur hollandais remonte un fleuve qui portera son nom — un fleuve qui longe aujourd'hui l'une des villes les plus célèbres au monde. Qui est-il ?",
     options: ["John Cabot", "Henry Hudson", "Giovanni da Verrazzano", "Samuel de Champlain"],
     correct: 1,
-    feedback: "Henry Hudson… ce fleuve coule encore aujourd'hui le long d'une île très connue. 🌊"
+    feedback: "Henry Hudson. 🌊"
   },
   {
     icon: "⛴️",
-    question: "Au début du XXe siècle, des millions de personnes ont traversé le même port, serrant leurs maigres bagages, cherchant des yeux une terre nouvelle. Une île de ce port garde encore aujourd'hui la mémoire de tous leurs noms.\n\n(📸 imagine un grand hall rempli de monde, en noir et blanc)",
+    question: "Au début du XXe siècle, des millions de personnes ont traversé le même port, serrant leurs maigres bagages, cherchant des yeux une terre nouvelle. Une île de ce port garde encore aujourd'hui la mémoire de tous leurs noms.",
     options: ["Governors Island", "Coney Island", "Ellis Island", "Roosevelt Island"],
     correct: 2,
-    feedback: "Ellis Island… juste à côté se dresse celle qui les accueillait, torche levée. ⛴️"
+    feedback: "Ellis Island. ⛴️"
   },
   {
     icon: "🌉",
-    question: "Construite entre 1870 et 1883, elle fut le plus long pont suspendu du monde à son inauguration. Ses deux tours de granit dominent un détroit entre deux îles — et sont aujourd'hui l'un des horizons les plus photographiés de la planète.\n\n(📸 cherche une photo de ce pont au lever du soleil)",
+    question: "Construite entre 1870 et 1883, elle fut le plus long pont suspendu du monde à son inauguration. Ses deux tours de granit dominent un détroit entre deux îles — et sont aujourd'hui l'un des horizons les plus photographiés de la planète.",
     options: ["Le pont de San Francisco", "Le pont de Brooklyn", "Le pont de Londres", "Le pont de Sydney"],
     correct: 1,
-    feedback: "Le Brooklyn Bridge… on pourra le traverser à pied si tu veux. 🌉"
+    feedback: "Le Brooklyn Bridge. 🌉"
   },
   {
     icon: "🗽",
-    question: "Elle a traversé l'Atlantique en morceaux, offerte par un pays ami. Depuis 1886, elle lève sa torche dans une baie, et quiconque arrive par la mer la voit en premier.\n\n(📸 la photo depuis le ferry, avec la skyline derrière)",
+    question: "Elle a traversé l'Atlantique en morceaux, offerte par un pays ami. Depuis 1886, elle lève sa torche dans une baie, et quiconque arrive par la mer la voit en premier.",
     options: ["La Victoire de Samothrace", "La Statue de la Liberté", "Le Christ Rédempteur", "Marianne"],
     correct: 1,
-    feedback: "La Statue de la Liberté ! On va la voir en vrai… toutes les deux. 🗽✨"
+    feedback: "La Statue de la Liberté. 🗽✨"
   }
 ];
 
