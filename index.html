@@ -222,7 +222,7 @@
   <div class="letter-paper">
 
     <!-- ✏️ PERSONNALISER : la date -->
-    <div class="letter-date">Juin 2025 · Confidentiel</div>
+    <div class="letter-date">Juin 2026 · Confidentiel</div>
 
     <!-- ✏️ PERSONNALISER : le prénom -->
     <h1 class="letter-header">Ma chérie,</h1>
@@ -283,7 +283,8 @@
     <div class="reveal-message">
       Valises, selfies devant Central Park,<br>
       bagels le matin et Broadway le soir…<br>
-      <strong>On part à New York, toi et moi.</strong><br>
+      <strong>On part à New York, toi et moi.</strong><br><br>
+      📅 <strong>27 juillet → 3 août</strong><br><br>
       Bonne fête, mon cœur 🗽
     </div>
 
@@ -301,24 +302,31 @@
 const enigmes = [
   {
     icon: "🌊",
-    question: "En 1609, un explorateur hollandais remonte un fleuve qui portera son nom — un fleuve qui longe aujourd'hui l'une des villes les plus célèbres au monde. Qui est-il ?",
+    question: "En 1609, un explorateur hollandais remonte un fleuve qui portera son nom — un fleuve qui longe aujourd'hui l'une des villes les plus célèbres au monde. Qui est-il ?\n\n(📸 cherche une photo de ce fleuve vu du ciel)",
     options: ["John Cabot", "Henry Hudson", "Giovanni da Verrazzano", "Samuel de Champlain"],
     correct: 1,
     feedback: "Henry Hudson… ce fleuve coule encore aujourd'hui le long d'une île très connue. 🌊"
   },
   {
-    icon: "🏛️",
-    question: "Des millions d'immigrants l'ont traversée au début du XXe siècle pour entrer aux États-Unis. Cette île du port de New York abrite aujourd'hui un musée de l'immigration. Comment s'appelle-t-elle ?",
-    options: ["Governors Island", "Ellis Island", "Roosevelt Island", "Coney Island"],
+    icon: "🌉",
+    question: "Construite entre 1870 et 1883, elle fut le plus long pont suspendu du monde à son inauguration. Ses deux tours de granit dominent un détroit entre deux îles — et sont aujourd'hui l'un des horizons les plus photographiés de la planète.\n\n(📸 cherche une photo de ce pont au lever du soleil)",
+    options: ["Le pont de San Francisco", "Le pont de Brooklyn", "Le pont de Londres", "Le pont de Sydney"],
     correct: 1,
-    feedback: "Ellis Island… des millions d'histoires, des millions de rêves. Juste à côté se dresse quelqu'un qui les accueillait tous. 🌊"
+    feedback: "Le Brooklyn Bridge… on pourra le traverser à pied si tu veux. 🌉"
+  },
+  {
+    icon: "⛴️",
+    question: "Au début du XXe siècle, des millions de personnes ont traversé le même port, serrant leurs maigres bagages, cherchant des yeux une terre nouvelle. Une île de ce port garde encore aujourd'hui la mémoire de tous leurs noms.\n\n(📸 imagine un grand hall rempli de monde, en noir et blanc)",
+    options: ["Governors Island", "Coney Island", "Ellis Island", "Roosevelt Island"],
+    correct: 2,
+    feedback: "Ellis Island… juste à côté se dresse celle qui les accueillait, torche levée. ⛴️"
   },
   {
     icon: "🗽",
-    question: "Cadeau de la France aux États-Unis, elle lève sa torche depuis 1886 dans la baie de New York. Elle est le symbole de la liberté dans le monde entier. C'est… ?",
-    options: ["La Tour Eiffel", "La Statue de la Liberté", "Le Colisée", "Big Ben"],
+    question: "Elle a traversé l'Atlantique en morceaux, offerte par un pays ami. Depuis 1886, elle lève sa torche dans une baie, et quiconque arrive par la mer la voit en premier.\n\n(📸 la photo depuis le ferry, avec la skyline derrière)",
+    options: ["La Victoire de Samothrace", "La Statue de la Liberté", "Le Christ Rédempteur", "Marianne"],
     correct: 1,
-    feedback: "La Statue de la Liberté ! Et devine quoi… on va la voir en vrai. 🗽✨"
+    feedback: "La Statue de la Liberté ! On va la voir en vrai… toutes les deux. 🗽✨"
   }
 ];
 
